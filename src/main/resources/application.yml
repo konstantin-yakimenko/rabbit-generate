@@ -1,0 +1,18 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    password: guest
+    username: guest
+
+# адрес мастера
+urlmaster: http://localhost:8080
+
+# exchange, который связан с очредью для наливки
+exchange: exchange.name
+routingkey: command
+
+# путь и имя файла
+# в файле лежат список путей файлов filePathId в столбик без знаков препинания
+# в данном случае это файд ids который будет лежать рядом с jar-файлом
+filepath: ids
