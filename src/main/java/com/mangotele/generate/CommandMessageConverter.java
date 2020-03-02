@@ -21,11 +21,7 @@ public class CommandMessageConverter implements MessageConverter {
     public Message toMessage(Object object, MessageProperties messageProperties) throws MessageConversionException {
         Command msg = (Command) object;
         byte[] body;
-        if (msg != null) {
-            body = gson.toJson(msg).getBytes();
-        } else {
-            return null;
-        }
+        body = gson.toJson(msg).getBytes();
         return MessageBuilder.withBody(body).andProperties(messageProperties).build();
     }
 

@@ -12,7 +12,6 @@ urlmaster: http://localhost:8080
 exchange: exchange.name
 routingkey: command
 
-# путь и имя файла
-# в файле лежат список путей файлов filePathId в столбик без знаков препинания
-# в данном случае это файд ids который будет лежать рядом с jar-файлом
-filepath: ids
+# путь к каталогу с файлами
+# в файлах лежат список путей файлов filePathId в столбик без знаков препинания
+folder: path_folder

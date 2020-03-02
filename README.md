@@ -2,7 +2,7 @@
 
 #### Запуск
 
-java -jar generate-0.0.1.jar --Dspring.config.location=appliation.yml
+java -jar generate-0.0.2.jar --Dspring.config.location=appliation.yml
 
 Рядом с jar файлом лежит файл с конфигами application.yml и файл с идентификаторами ids
 
@@ -32,9 +32,8 @@ urlmaster: http://localhost:8080
 exchange: exchange.name
 routingkey: command
 
-# путь и имя файла
-# в файле лежат список путей файлов filePathId в столбик без знаков препинания
-# в данном случае это файл ids который будет лежать рядом с jar-файлом
-filepath: ids
+# путь к каталогу с файлами
+# в файлах лежат список путей файлов filePathId в столбик без знаков препинания
+folder: path_folder
 ```
 
